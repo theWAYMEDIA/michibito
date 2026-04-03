@@ -1,0 +1,30 @@
+baseURL: 'https://michibito.org'
+languageCode: 'ja'
+title: 'Michibito — 道の人'
+
+params:
+  description: "Michibito — 道を歩む人のための古代哲学"
+  schemaType: "EducationalOrganization"
+  aiCrawlable: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: github
+    noClasses: false
+
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+  section: ["HTML", "RSS", "JSON"]
+  page: ["HTML", "JSON"]
+
+related:
+  threshold: 80
+  includeNewer: true
+  indices:
+    - name: "keywords"
+      weight: 100
+    - name: "concepts"
+      weight: 200
