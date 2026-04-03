@@ -18,6 +18,7 @@
 </head>
 <body>
     <header>
+{{ if .Site.Menus.main }}
 <nav>
     {{ range .Site.Menus.main }}
         {{ if .Params.target }}
@@ -30,6 +31,7 @@
         {{ end }}
     {{ end }}
 </nav>
+{{ end }}
     </header>
     
     <main>
@@ -37,8 +39,7 @@
     </main>
     
     <footer>
-        <p>&copy; 2024 Wayism. Ancient wisdom for modern seekers.</p>
-		<p><a href="/glossary/" class="glossary-highlight">📖 Glossary</a></p>
+        <p>&copy; {{ now.Year }} Michibito — theWAY Media</p>
     </footer>
 </body>
 </html>
