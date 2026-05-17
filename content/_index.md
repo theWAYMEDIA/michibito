@@ -1,22 +1,21 @@
 ---
-title: "Michibito — 道の人"
-description: "Michibito — the ancient philosophy of the Way, in Japanese"
-draft: false
+title: "道人 — Michibito"
+description: "道人（みちびと）— 道法（Wayism）の日本語拠点。魂の進化と蝶の道を探求する古代哲学。"
+keywords: ["道人", "道法", "Wayism", "魂の進化", "蝶の道"]
 ---
 
-## 道の人へ — *For those who walk the Way*
+道人（みちびと）は、古代の存在論的哲学である道法（DaoFa/Wayism）の日本語拠点です。
 
-This site is being prepared.
+道法は信仰を要求しません——論理と直接体験によって検証できる理解を提供します。
 
-**Michibito** (道人) — *person of the Way* — brings the ancient existential philosophy of Wayism to Japanese speakers.
-
-Known across cultures as DaoFa (道法), Mahamarga (महामार्ग), Caminismo, and Wayism, this is not a new teaching. It is the oldest path — the philosophy that souls evolve toward wisdom, compassion, and ultimately toward spirit.
-
----
-
-*道は語られるものではなく、歩まれるものである。*
-The Way is not spoken — it is walked.
+すべての人間は進化する魂性（ソウル）の存在であり、[蝶の道](/dori/diedao/)（Butterfly Path）を歩み、不死の霊性（スピリット）へと変容します。
 
 ---
 
-Coming soon. &nbsp;•&nbsp; [Wayism.org](https://wayism.org) — English &nbsp;•&nbsp; [Caminismo.org](https://caminismo.org) — Español
+## 探求する
+
+- [道理](/dori/) — 哲学的基盤
+- [修行](/shugyo/) — 実践の方法
+- [問答](/mondo/) — よくある質問
+
+*コンテンツは準備中です。[英語サイト wayism.org](https://wayism.org) をご覧ください。*

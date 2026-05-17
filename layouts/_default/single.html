@@ -2,18 +2,17 @@
 <article>
     <h1>{{ .Title }}</h1>
     {{ .Content }}
-    
-    <!-- Automatic Book Navigation (only shows for pages in /books/ section) -->
-    {{ if eq .Section "books" }}
+
+    {{ if eq .Section "shoseki" }}
         {{ partial "smart-book-nav.html" . }}
     {{ end }}
-    
+
     {{ if .Params.related }}
     <div class="related">
-        <h3>Related Concepts:</h3>
+        <h3>関連概念：</h3>
         <ul>
         {{ range .Params.related }}
-            <li><a href="/glossary/#{{ . | urlize }}">{{ . }}</a></li>
+            <li><a href="/yogoshu/#{{ . | urlize }}">{{ . }}</a></li>
         {{ end }}
         </ul>
     </div>

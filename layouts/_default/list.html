@@ -2,8 +2,8 @@
 <section>
     <h1>{{ .Title }}</h1>
     {{ .Content }}
-    
-    {{ range .Pages.ByParam "book_weight" }}
+
+    {{ range .Pages.ByParam "weight" }}
     <article>
         <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         <p>{{ .Summary }}</p>

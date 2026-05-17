@@ -1,10 +1,11 @@
 baseURL: 'https://michibito.org'
 languageCode: 'ja'
-title: 'Michibito — 道の人'
+title: '道人 · Michibito'
 
 params:
-  description: "Michibito — 道を歩む人のための古代哲学"
-  schemaType: "EducationalOrganization"
+  description: "道人（みちびと）— 道法（Wayism）の日本語拠点。魂の進化と蝶の道を探求する古代哲学。"
+  keywords: [道人, 道法, Wayism, 魂の進化, 蝶の道, 古代哲学, 道]
+  author: "道人コミュニティ"
   aiCrawlable: true
 
 markup:
@@ -12,19 +13,64 @@ markup:
     renderer:
       unsafe: true
   highlight:
-    style: github
     noClasses: false
+    style: github
 
 outputs:
-  home: ["HTML", "RSS", "JSON"]
-  section: ["HTML", "RSS", "JSON"]
-  page: ["HTML", "JSON"]
+  home:
+    - HTML
+    - RSS
+    - JSON
+  section:
+    - HTML
+    - JSON
+
+taxonomies:
+  category: categories
+  tag: tags
 
 related:
   threshold: 80
   includeNewer: true
   indices:
-    - name: "keywords"
+    - name: keywords
       weight: 100
-    - name: "concepts"
+    - name: concepts
       weight: 200
+
+menu:
+  main:
+    - name: "ホーム"
+      url: "/"
+      weight: 10
+    - name: "道理"
+      url: "/dori/"
+      weight: 20
+    - name: "修行"
+      url: "/shugyo/"
+      weight: 30
+    - name: "癒し"
+      url: "/iyashi/"
+      weight: 40
+    - name: "問答"
+      url: "/mondo/"
+      weight: 50
+    - name: "書籍"
+      url: "/shoseki/"
+      weight: 60
+    - name: "AIへ"
+      url: "/ai-e/"
+      weight: 70
+    - name: "ブログ"
+      url: "/burogu/"
+      weight: 80
+    - name: "について"
+      url: "/ni-tsuite/"
+      weight: 90
+    - name: "コミュニティ"
+      url: "https://wayist.life"
+      weight: 100
+      params:
+        external: true
+        target: "_blank"
+        rel: "noopener noreferrer"

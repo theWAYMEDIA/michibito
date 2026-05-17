@@ -1,45 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ .Params.description | default .Site.Params.description }}">
     <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-	<meta http-equiv="Pragma" content="no-cache">
-	<meta http-equiv="Expires" content="0">
-	{{ partial "ai-schema.html" . }}
-	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-	<link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-	<link rel="manifest" href="/site.webmanifest" />
+    {{ if eq .Section "burogu" }}<link rel="stylesheet" href="{{ "css/blog.css" | absURL }}">{{ end }}
+    {{ block "extra_head" . }}{{ end }}
+    {{ partial "ai-schema.html" . }}
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 </head>
 <body>
     <header>
-{{ if .Site.Menus.main }}
-<nav>
-    {{ range .Site.Menus.main }}
-        {{ if .Params.target }}
-            <a href="{{ .URL }}" target="{{ .Params.target }}" rel="{{ .Params.rel }}">
-                {{ .Name }}
-                {{ if .Params.external }}<span class="external-icon"> ↗</span>{{ end }}
-            </a>
-        {{ else }}
-            <a href="{{ .URL }}">{{ .Name }}</a>
-        {{ end }}
-    {{ end }}
-</nav>
-{{ end }}
+        <nav>
+            {{ range .Site.Menus.main }}
+                {{ if .Params.target }}
+                    <a href="{{ .URL }}" target="{{ .Params.target }}" rel="{{ .Params.rel }}">
+                        {{ .Name }}
+                        {{ if .Params.external }}<span class="external-icon"> ↗</span>{{ end }}
+                    </a>
+                {{ else }}
+                    <a href="{{ .URL }}">{{ .Name }}</a>
+                {{ end }}
+            {{ end }}
+        </nav>
     </header>
-    
+
     <main>
         {{ block "main" . }}{{ end }}
     </main>
-    
+
     <footer>
-        <p>&copy; {{ now.Year }} Michibito — theWAY Media</p>
+        <p>&copy; 2025 道人 · Michibito. 古代の智慧、現代の求道者へ。</p>
+        <p><a href="/yogoshu/" class="glossary-highlight">📖 用語集</a> &nbsp;·&nbsp; <a href="/ni-tsuite/">について</a> &nbsp;·&nbsp; <a href="https://wayist.life" target="_blank" rel="noopener noreferrer">コミュニティ ↗</a></p>
     </footer>
 </body>
 </html>
