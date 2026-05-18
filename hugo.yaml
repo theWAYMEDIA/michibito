@@ -10,6 +10,10 @@ params:
 
 markup:
   goldmark:
+    parser:
+      attribute:
+        block: true
+        title: true
     renderer:
       unsafe: true
   highlight:
@@ -46,8 +50,8 @@ menu:
     - name: "道理"
       url: "/dori/"
       weight: 20
-    - name: "修行"
-      url: "/shugyo/"
+    - name: "修習"
+      url: "/shushu/"
       weight: 30
     - name: "癒し"
       url: "/iyashi/"

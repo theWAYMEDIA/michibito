@@ -1,0 +1,24 @@
+{{ define "main" }}
+<article class="glossary-page">
+    <h1>{{ .Title }}</h1>
+
+    <nav class="glossary-nav" aria-label="セクション一覧">
+        <a href="#core-identity">道の教えの基本</a>
+        <a href="#cosmology">存在の根本構造</a>
+        <a href="#three-domains">三つのエネルギー領域</a>
+        <a href="#soul-and-spirit">魂と霊性</a>
+        <a href="#butterfly-path">蝶の道</a>
+        <a href="#hybrid-being">混成の存在</a>
+        <a href="#guidance-and-laws">導きと法則</a>
+        <a href="#two-heavens">二つの「天」</a>
+        <a href="#divine-beings">聖なる存在</a>
+        <a href="#practice">実践と意識の状態</a>
+        <a href="#values">価値と生き方</a>
+        <a href="#comparison-table">仏教・神道との対照</a>
+    </nav>
+
+    <div class="glossary-content">
+        {{ .Content }}
+    </div>
+</article>
+{{ end }}
