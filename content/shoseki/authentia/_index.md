@@ -50,4 +50,6 @@ weight: 10
 
 *音声版は [Wayist.Life](https://wayist.life) のメンバーにご利用いただけます。*
 
-{{< community-invite >}}
+---
+
+道びとの共同体 [Wayist.Life](https://wayist.life) でも、講座・電子書籍・仲間とのつながりをお楽しみいただけます。
