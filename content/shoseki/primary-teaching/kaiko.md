@@ -3,7 +3,7 @@ title: "開篇 — 道の教え（みちのおしえ）"
 description: "道の教え（みちのおしえ）——根本の教えの序文。編者サルヴァル・道行盧による本書の背景と意図。"
 keywords: ["道の教え", "みちのおしえ", "根本の教え", "サルヴァル・道行盧", "Wayism", "蝶の道"]
 book: "primary-teaching-ja"
-weight: 10
+weight: 1
 ---
 
 {{< book-nav >}}
