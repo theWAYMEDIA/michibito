@@ -35,10 +35,6 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v4
-
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
@@ -46,7 +42,7 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "https://michibito.org/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
