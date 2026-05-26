@@ -1,0 +1,4 @@
+<div class="concept-card {{ .Get "type" }}">
+  <h3><a href="{{ .Get "link" }}">{{ .Get "title" }}</a></h3>
+  <p>{{ .Inner | markdownify }}</p>
+</div>
