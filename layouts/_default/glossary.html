@@ -1,6 +1,6 @@
 {{ define "main" }}
 <article class="glossary-page">
-    <h1>{{ .Title }}</h1>
+    {{ if not (strings.HasPrefix (strings.TrimSpace .Content) "<h1") }}<h1>{{ .Title }}</h1>{{ end }}
 
     <nav class="glossary-nav" aria-label="セクション一覧">
         <a href="#core-identity">道の教えの基本</a>
