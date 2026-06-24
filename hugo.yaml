@@ -68,6 +68,10 @@ menu:
     - name: "ブログ"
       url: "/burogu/"
       weight: 80
+    - name: "検索"
+      url: "/search/"
+      weight: 85
+
     - name: "について"
       url: "/ni-tsuite/"
       weight: 90
